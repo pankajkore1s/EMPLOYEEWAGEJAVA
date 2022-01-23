@@ -17,27 +17,34 @@ public class empwage {
 		int emp_worked_hour=0;
 		int total_worked_days=0;
 		Random random=new Random();
-		int number=random.nextInt(3);
+		int number=random.nextInt(2);
 		System.out.println(number);
 		while(maximum_working_hour > emp_worked_hour &&  Working_day_per_month > total_worked_days)			
 			total_worked_days++;
+
+		switch(number)
+		{
+		case 0:
+			int income=emp_wage_per_hour*fullDay_hour*Working_day_per_month;
+			System.out.println("Employee is present and full day earning is="+income);
 			Random random1=new Random();
-			int number1=random.nextInt(3);
-		
-				switch(number1)
-					{
-					case 1:
-							int income=emp_wage_per_hour*fullDay_hour*Working_day_per_month;
-							System.out.println("Employee is present and full day earning is="+income);
-							break;
-					case 2:
-							int income1=emp_wage_per_hour*parttime_hour*Working_day_per_month;
-							System.out.println("Employee Is Present And Part Time Day Earning Is="+income1);
-							break;
-					default:
-							System.out.println("Employee is absent hence there will be no earning");
-					}
-		
+			int number1=random.nextInt(2);
+			System.out.println(number1);
+
+			switch(number1)
+			{
+			case 1:
+				int income1=emp_wage_per_hour*parttime_hour*Working_day_per_month;
+				System.out.println("Employee Is Present And Part Time Day Earning Is="+income1);
+				break;
+			case 2 :
+				System.out.println("employee is not doing partime");
+				break;
+			}
+			break;
+		case 1:
+			System.out.println("Employee is absent hence there will be no earning");
+			break;
+		}
 	}
 }
-
