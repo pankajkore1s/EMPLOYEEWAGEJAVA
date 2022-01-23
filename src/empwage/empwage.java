@@ -11,7 +11,7 @@ public class empwage {
 		int Is_Part_Time=0;
 		int emp_wage_per_hour=20;
 		int fullDay_hour=8;
-		int parttime_hour=4;
+		int parttime_hour=8;
 		int full_time_days=0;
 		int partime_days=0;
 		int emp_worked_hour=0;
