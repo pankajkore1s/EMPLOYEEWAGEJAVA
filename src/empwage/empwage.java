@@ -16,6 +16,7 @@ public class empwage {
 		int partime_days=0;
 		int emp_worked_hour=0;
 		int total_worked_days=0;
+		
 		Random random=new Random();
 		int number=random.nextInt(2);
 		System.out.println(number);
